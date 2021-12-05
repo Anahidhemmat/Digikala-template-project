@@ -1,5 +1,7 @@
 /* Fonts url */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@200;300&display=swap");
+/* Font awsome */
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
 
 * {
   margin: 0;
@@ -13,5 +15,50 @@
 body {
   color: #000;
   font-family: "Lato", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+header {
+  width: 100vw;
+}
+.container {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  margin-top: 10px;
+}
+.logo-input-con {
+  width: 400px;
+}
+.header-logo-section svg {
+  width: 93px;
+  height: 25px;
+  margin-top: 10px;
+}
+.header-search-section {
+  padding: 10px;
+  width: 748px;
+  height: 40px;
+  margin-left: 25px;
+  border-radius: 8px;
+  background-color: rgba(213, 215, 216, 0.294);
+}
+.bi-search {
+  color: rgb(165, 165, 165);
+  position: absolute;
+  top: 17px;
+}
+.header-search {
+  width: 100%;
+  background: none;
+  font-size: 0.857rem;
+  font-weight: 300;
+  margin: 0 0 11px 25px;
+  padding-bottom: 4px;
+  position: absolute;
+  top: 20px;
+}
+.icon-sing-con {
+  width: 100%;
+  float: right;
 }
