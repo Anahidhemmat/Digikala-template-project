@@ -9,6 +9,7 @@
   list-style: none;
   border: none;
   outline: none;
+  max-width: 1500px;
 }
 body {
   color: #000;
@@ -21,22 +22,24 @@ a {
 a:hover {
   color: inherit;
 }
+/* Header */
 header {
   width: 100%;
 }
 .header-container {
   margin: 10px 15px 0 15px;
 }
-
+/* Logo */
 .header-logo-section svg {
   width: 93px;
   height: 25px;
   margin-top: 10px;
 }
+/* Search input */
 .header-search-section {
   padding: 10px;
-  width: 500px;
-  height: 35px;
+  width: 600px;
+  height: 44px;
   margin-left: 15px;
   border-radius: 8px;
   background-color: rgba(213, 215, 216, 0.294);
@@ -44,17 +47,18 @@ header {
 .bi-search {
   color: rgb(165, 165, 165);
   position: absolute;
-  top: 17px;
+  top: 20px;
 }
 .header-search {
   background: none;
-  font-size: 0.857rem;
+  font-size: 1.2rem;
   font-weight: 300;
   margin: 0 0 11px 25px;
   padding-bottom: 4px;
   position: absolute;
   top: 20px;
 }
+/* Shopping link */
 .icon-sing-con {
   width: 383px;
   margin-right: 20px;
@@ -64,6 +68,7 @@ header {
   font-size: 1.5rem;
   color: #4a5f73;
 }
+/* Sign in button */
 .signin-button button {
   background: none;
   padding: 5px 8px 6px 8px;
@@ -74,7 +79,7 @@ header {
   text-decoration: none;
   color: #4a5f73;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .signin-button a i {
   padding-right: 6px;
@@ -90,15 +95,43 @@ header {
   margin-right: 12px;
   margin: 20px;
 }
+/* Navigation Links */
+
+.nav-item {
+  margin: 10px 8px 0 8px;
+}
 .nav-link-head {
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: #000000a8;
 }
-.nav-item {
-  margin: 0 5px;
+/* Category link */
+.category {
+  color: #000;
+  font-size: 1.2rem;
+}
+.category::after {
+  content: "";
+  background: #4a5f73;
+  width: 100%;
+  height: 10px;
+  border-right: 0.3px solid rgba(229, 229, 230, 0.294);
+  margin-left: 7px;
+}
+
+/* Category link icon */
+.fa-bars {
+  margin-right: 5px;
 }
 
 /* Category drop down */
+
+.digital-product {
+  color: rgb(230, 68, 68) !important;
+  font-size: 0.8rem;
+}
+.dd-link {
+  font-size: 0.9rem;
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -107,12 +140,16 @@ header {
   display: none;
   position: absolute;
   background-color: #fff;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 .dropdown-content li {
   padding: 10px;
+}
+.dropdown-content li:hover {
+  color: rgb(230, 68, 68);
+  background-color: #e6e6e6;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -125,6 +162,7 @@ header {
   color: #000000a8;
   margin-right: 5px;
 }
+
 .laptop::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -171,31 +209,16 @@ header {
   font-weight: 900;
   content: "\f5c1";
 }
-.dd-first-link {
-  color: rgb(230, 68, 68);
-  background-color: #f9f9f9;
-  font-size: 0.8rem;
-}
-.dd-first-link {
-  color: rgb(230, 68, 68) !important;
-}
-.font-awesome-icons:hover {
-  color: rgb(230, 68, 68);
-  border-color: #f9f9f9;
-}
 
-.l-1 {
-  color: #000;
-  font-size: 0.8rem;
-}
-
-.fa-bars {
-  margin-right: 5px;
-}
+/* Header Navigation */
 .nav-link-head i:not(.fa-bars, .fa-diamond, .fa-p, .fa-location-dot) {
   color: rgba(110, 110, 110, 0.548);
   margin-right: 5px;
 }
+.last-link {
+  font-weight: 300;
+}
+/* Header navigation icons */
 .fa-diamond {
   color: rgb(137, 82, 200);
   margin-right: 5px;
@@ -204,9 +227,7 @@ header {
   color: rgb(42, 117, 216);
   margin-right: 5px;
 }
-.last-link {
-  font-weight: 300;
-}
+/* Header location */
 .location {
   margin-left: 70px;
 }
@@ -215,5 +236,50 @@ header {
   position: relative;
 }
 .badge {
-  padding: 2px;
+  padding: 4px;
+}
+/* Media queries */
+
+/* Main */
+
+/* Shop now banner fixed */
+
+.shop-now-banner {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/29/12/34/christmas-1869533__340.png);
+  background-position: center;
+  width: 400px;
+  height: 170px;
+  border-radius: 30px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 15px 15px 0;
+}
+/* On sale and slider */
+
+.onsale-slider-container {
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 15px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 437px);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  justify-content: center;
+}
+.onsale-section {
+  border-radius: 30px;
+}
+.onsale1,
+.onsale2 {
+  height: 218px;
+}
+.onsale2 {
+  grid-column: 1/ 2;
+  grid-row: 2/ 3;
+}
+.slider {
+  grid-column: span 2;
+  grid-row: span 2;
 }
