@@ -13,6 +13,9 @@
 a {
   text-decoration: none;
 }
+a:hover {
+  color: #4a5f73;
+}
 body {
   color: #000;
   font-family: "Lato", sans-serif;
@@ -26,7 +29,7 @@ body {
 .header-logo-section svg {
   width: 5.813rem;
   height: 1.563rem;
-  margin-top: 0.625rem;
+  margin-top: 0.656rem;
 }
 /* Search input */
 .header-search-section {
@@ -125,6 +128,9 @@ body {
 .dd-link {
   font-size: 0.9rem;
 }
+.dd-link:hover {
+  color: rgb(230, 68, 68);
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -135,13 +141,13 @@ body {
   background-color: #fff;
   min-width: 12.5rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 999;
 }
 .dropdown-content li {
   padding: 0.625rem;
 }
 .dropdown-content li:hover {
-  color: rgb(230, 68, 68);
+  color: rgb(230, 68, 68) !important;
   background-color: #e6e6e6;
 }
 .dropdown:hover .dropdown-content {
@@ -241,15 +247,14 @@ body {
 .searchbar-md {
   background-color: rgba(213, 215, 216, 0.294);
   width: 13rem;
-  margin: 10px;
-  padding: 10px 0 10px 44px;
+  margin: 0.625rem;
+  padding: 0.625rem 0 0.625rem 0.938rem;
   border-radius: 0.5rem;
-  font-weight: 900;
+  font-weight: 700;
   font-family: "Font Awesome 5 Free";
+  display: none;
 }
-.searchbar-md::placeholder {
-  text-transform: lowercase;
-}
+
 /* Header Media Queries */
 @media screen and (max-width: 950px) {
   nav {
@@ -278,9 +283,11 @@ body {
   .header-search-section {
     display: none;
   }
-  .bi-search {
-    position: absolute;
-    top: 11%;
-    left: 23%;
+  .searchbar-md {
+    display: inline;
+  }
+  .shopping-icon i {
+    margin-right: 0;
+    font-size: 1.4rem;
   }
 }
