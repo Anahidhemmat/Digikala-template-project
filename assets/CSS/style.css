@@ -1,7 +1,5 @@
 /* Fonts url */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@200;300&display=swap");
-/* Font awsome */
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
 * {
   margin: 0;
   padding: 0;
@@ -27,21 +25,21 @@ header {
   width: 100%;
 }
 .header-container {
-  margin: 10px 15px 0 15px;
+  margin: 0.625rem 0.938rem 0 0.938rem;
 }
 /* Logo */
 .header-logo-section svg {
-  width: 93px;
-  height: 25px;
-  margin-top: 10px;
+  width: 5.813rem;
+  height: 1.563rem;
+  margin-top: 0.625rem;
 }
 /* Search input */
 .header-search-section {
-  padding: 10px;
-  width: 600px;
-  height: 44px;
-  margin-left: 15px;
-  border-radius: 8px;
+  padding: 0.625rem;
+  width: 37.5rem;
+  height: 2.75rem;
+  margin-left: 0.938rem;
+  border-radius: 0.5rem;
   background-color: rgba(213, 215, 216, 0.294);
 }
 .bi-search {
@@ -53,27 +51,27 @@ header {
   background: none;
   font-size: 1.2rem;
   font-weight: 300;
-  margin: 0 0 11px 25px;
-  padding-bottom: 4px;
+  margin: 0 0 0.688rem 1.563rem;
+  padding-bottom: 0.25rem;
   position: absolute;
   top: 20px;
 }
 /* Shopping link */
 .icon-sing-con {
-  width: 383px;
-  margin-right: 20px;
+  width: 23.938rem;
+  margin-right: 1.25rem;
 }
 .shopping-icon i {
-  margin-right: 20px;
+  margin-right: 1.25rem;
   font-size: 1.5rem;
   color: #4a5f73;
 }
 /* Sign in button */
 .signin-button button {
   background: none;
-  padding: 5px 8px 6px 8px;
+  padding: 0.313rem 0.5rem 0.375rem 0.5rem;
   border: 0.1px solid rgb(165, 165, 165);
-  border-radius: 8px;
+  border-radius: 80.5rem;
 }
 .signin-button a {
   text-decoration: none;
@@ -82,7 +80,7 @@ header {
   font-size: 1rem;
 }
 .signin-button a i {
-  padding-right: 6px;
+  padding-right: 0.375rem;
   font-size: 1.1rem;
   font-weight: 400;
 }
@@ -90,15 +88,15 @@ header {
   content: "";
   background: #4a5f73;
   width: 100%;
-  height: 10px;
+  height: 0.625rem;
   border-right: 0.3px solid rgba(229, 229, 230, 0.294);
-  margin-right: 12px;
-  margin: 20px;
+  margin-right: 0.75rem;
+  margin: 1.25rem;
 }
 /* Navigation Links */
 
 .nav-item {
-  margin: 10px 8px 0 8px;
+  margin: 0.625rem 0.5rem 0 0.5rem;
 }
 .nav-link-head {
   font-size: 1rem;
@@ -113,14 +111,14 @@ header {
   content: "";
   background: #4a5f73;
   width: 100%;
-  height: 10px;
+  height: 0.625rem;
   border-right: 0.3px solid rgba(229, 229, 230, 0.294);
-  margin-left: 7px;
+  margin-left: 0.438rem;
 }
 
 /* Category link icon */
 .fa-bars {
-  margin-right: 5px;
+  margin-right: 0.313rem;
 }
 
 /* Category drop down */
@@ -140,12 +138,12 @@ header {
   display: none;
   position: absolute;
   background-color: #fff;
-  min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 12.5rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 .dropdown-content li {
-  padding: 10px;
+  padding: 0.625rem;
 }
 .dropdown-content li:hover {
   color: rgb(230, 68, 68);
@@ -160,7 +158,7 @@ header {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   color: #000000a8;
-  margin-right: 5px;
+  margin-right: 0.313rem;
 }
 
 .laptop::before {
@@ -209,11 +207,14 @@ header {
   font-weight: 900;
   content: "\f5c1";
 }
+.dropdown-content a:hover:before {
+  color: rgb(230, 68, 68);
+}
 
 /* Header Navigation */
 .nav-link-head i:not(.fa-bars, .fa-diamond, .fa-p, .fa-location-dot) {
   color: rgba(110, 110, 110, 0.548);
-  margin-right: 5px;
+  margin-right: 0.313rem;
 }
 .last-link {
   font-weight: 300;
@@ -221,24 +222,35 @@ header {
 /* Header navigation icons */
 .fa-diamond {
   color: rgb(137, 82, 200);
-  margin-right: 5px;
+  margin-right: 0.313rem;
 }
 .fa-p {
   color: rgb(42, 117, 216);
-  margin-right: 5px;
+  margin-right: 0.313rem;
 }
 /* Header location */
 .location {
-  margin-left: 70px;
+  margin-left: 4.375rem;
 }
 .fa-location-dot {
-  margin-left: 5px;
+  margin-left: 0.313rem;
   position: relative;
 }
 .badge {
-  padding: 4px;
+  padding: 0.25rem;
 }
-/* Media queries */
+/* Header Media queries */
+@media screen and (max-width: 670px) {
+  .navigation {
+    display: none;
+  }
+  .header-search-section {
+    width: 13rem;
+  }
+  .logo-input-con {
+    flex-direction: column;
+  }
+}
 
 /* Main */
 
@@ -247,39 +259,55 @@ header {
 .shop-now-banner {
   background-image: url(https://cdn.pixabay.com/photo/2016/11/29/12/34/christmas-1869533__340.png);
   background-position: center;
-  width: 400px;
-  height: 170px;
-  border-radius: 30px;
+  width: 25rem;
+  height: 10.625rem;
+  border-radius: 1.875rem;
   position: fixed;
   bottom: 0;
   right: 0;
-  margin: 0 15px 15px 0;
+  margin: 0 0.938rem 0.938rem 0;
 }
 /* On sale and slider */
 
 .onsale-slider-container {
   background-color: #f9f9f9;
   width: 100%;
-  padding: 15px;
+  padding: 0.938rem;
   height: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, 437px);
   grid-template-rows: repeat(2, 1fr);
-  gap: 15px;
+  gap: 0.938rem;
   justify-content: center;
 }
 .onsale-section {
-  border-radius: 30px;
+  border-radius: 1.875rem;
 }
 .onsale1,
 .onsale2 {
-  height: 218px;
+  height: 13.625rem;
+}
+.onsale1 {
+  background-image: url(../img/canyon-howell-_uB9B5GXhbY-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
 }
 .onsale2 {
   grid-column: 1/ 2;
   grid-row: 2/ 3;
+  background-image: url(../img/aleks-dorohovich-GG1FJwV67PA-unsplash.jpg);
 }
 .slider {
   grid-column: span 2;
   grid-row: span 2;
+}
+.carousel-item img {
+  border-radius: 1.875rem;
+  width: 98%;
+  height: 29rem;
+}
+.carousel-indicators [data-bs-target] {
+  width: 0.938rem;
+  height: 0.938rem;
+  border-radius: 50%;
 }

@@ -27,7 +27,7 @@
     />
 
     <!-- Css link -->
-    <link rel="stylesheet" href="../assets/CSS/style.css" />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
   </head>
   <body>
     <!-- Header -->
@@ -35,7 +35,7 @@
       <section class="header-container">
         <section class="d-flex justify-content-between">
           <!-- Logo and input -->
-          <section class="d-flex justify-content-between logo-input-con">
+          <section class="d-flex justify-content-between logo-input-container">
             <!-- Logo -->
             <section class="header-logo-section">
               <svg
@@ -61,7 +61,7 @@
             </section>
           </section>
           <!-- Shopping Icon and sign in button -->
-          <section class="d-flex justify-content-end icon-sing-con">
+          <section class="d-flex justify-content-end icon-sing-container">
             <!-- Icon -->
             <a href="#" class="shopping-icon">
               <i class="bi bi-cart2"></i>
@@ -75,11 +75,11 @@
           </section>
         </section>
         <!-- Navigation and Location -->
-        <section class="nav-loc-con">
+        <section class="nav-loc-container">
           <!-- Navigation -->
-          <nav class="navbar navbar-expand">
-            <section class="">
-              <ul class="navbar-nav">
+          <nav class="navbar navbar-expand d-">
+            <section>
+              <ul class="navbar-nav d-flex flex-wrap navigation">
                 <li class="nav-item dropdown">
                   <a href="#" class="nav-link-head category"
                     ><i class="fa-solid fa-bars"></i>Categories</a
@@ -231,9 +231,86 @@
       </section>
       <!-- On sale and Slider  -->
       <section class="onsale-slider-container">
-        <section class="onsale-section onsale1">on sale</section>
-        <section class="onsale-section onsale2">on sale</section>
-        <section class="onsale-section slider">Slider</section>
+        <section class="onsale-section onsale1"></section>
+        <section class="onsale-section onsale2"></section>
+        <!-- slider -->
+        <section class="onsale-section slider">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://www.goingbeyond.com/www14/wp-content/uploads/2017/12/Christmas-Office-Currently-Closed-2017-Website-Banner.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://www.techadvisor.com/cmsdata/features/3669238/last_minute_christmas_last_delivery_dates_2019_thumb800.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://previews.123rf.com/images/gpointstudio/gpointstudio1512/gpointstudio151200030/49194802-shopping-mall-as-a-good-place-for-christmas-shopping.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
       </section>
     </main>
     <!-- Footer -->
