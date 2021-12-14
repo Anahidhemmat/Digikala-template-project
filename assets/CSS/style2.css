@@ -350,18 +350,19 @@ body {
 /* Suggestions Product Cards */
 .products-container {
   background-color: #ff6a6ab9;
-  height: 80vh;
 }
 .suggested-product {
   background-color: #fff;
-  width: 20vw;
-  height: 65vh;
 }
 .product-img {
   width: 98%;
-  height: 16rem;
-  padding: 1em;
+  height: 14rem;
+  padding: 1em 1em 0;
   border-radius: 6% !important;
+}
+.card-title {
+  margin: 0;
+  padding: 0;
 }
 .progress {
   height: 0.555rem;
